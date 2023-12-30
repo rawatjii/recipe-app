@@ -4,8 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function RecipeTile({ recipe }) {
   return (
-    recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
-      <div
+    // recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
+      
+    // )
+    <div
         className="recipeTile"
         onClick={() => window.open(recipe["recipe"]["url"])}
       >
@@ -14,6 +16,5 @@ export default function RecipeTile({ recipe }) {
           {recipe["recipe"]["label"]}
         </p>
       </div>
-    )
   );
 }

@@ -39,8 +39,8 @@ function App() {
       </form>
 
       <div className="app__recipes">
-        {recipes !== [] &&
-          recipes.map((recipe) => {
+        
+          {recipes.map((recipe) => {
             return <RecipeTile recipe={recipe} />;
           })}
       </div>
